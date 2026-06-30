@@ -16,7 +16,6 @@ local function safeSpoof()
         LocalPlayer:SetAttribute("IsVoiceChatUser", true)
         LocalPlayer:SetAttribute("VCReportable", false)  -- Report evasion attempt
         
-        -- Restore UI elements
         if LocalPlayer:FindFirstChild("PlayerGui") then
             local voiceGui = LocalPlayer.PlayerGui:FindFirstChild("VoiceChat") or LocalPlayer.PlayerGui:FindFirstChildWhichIsA("VoiceChatGui")
             if voiceGui then voiceGui.Enabled = true end
