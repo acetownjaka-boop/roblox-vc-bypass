@@ -14,7 +14,7 @@ local function safeSpoof()
         LocalPlayer:SetAttribute("AgeVerified", true)
         LocalPlayer:SetAttribute("VoiceChatEnabled", true)
         LocalPlayer:SetAttribute("IsVoiceChatUser", true)
-        LocalPlayer:SetAttribute("VCReportable", false)  -- Report evasion attempt
+        LocalPlayer:SetAttribute("VCReportable", false)
         
         if LocalPlayer:FindFirstChild("PlayerGui") then
             local voiceGui = LocalPlayer.PlayerGui:FindFirstChild("VoiceChat") or LocalPlayer.PlayerGui:FindFirstChildWhichIsA("VoiceChatGui")
