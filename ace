@@ -41,7 +41,7 @@ local function enhancedBypass()
         -- to bypass checks
         if method:find("Init") or method:find("VoiceChat") or method == "GetVoiceChatState" then
             safeSpoof()
-            setthreadidentity(8)  -- Higher for better spoof
+            setthreadidentity(8)
             local result = oldNamecall(self, ...)
             safeSpoof()  -- Double apply
             return result
